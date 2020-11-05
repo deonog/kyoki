@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyoki Studios</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vanillaSlideshow.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper home">
+      <div class="nav">
+        <input type="checkbox" id="toggle" style="display: none" />
+        <label class="toggle-btn toggle-btn__cross" for="toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+        <nav
+          class="d-flex flex-column align-items-center justify-content-center"
+        >
+          <img src="img/kyoki-logo.png" alt="" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <header>
+        <div class="overlay"></div>
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="row">
+            <div class="col-12">
+              <img src="img/kyoki-logo.png" alt="" />
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+        <div id="vanilla-slideshow-container">
+          <div id="vanilla-slideshow">
+            <div class="vanilla-slide">
+              <img src="img/img-1.jpg" alt="Alt" />
+            </div>
+
+            <div class="vanilla-slide">
+              <img src="img/img-2.jpg" alt="Alt" />
+            </div>
+
+            <div class="vanilla-slide">
+              <img src="img/img-3.jpg" alt="Alt" />
+            </div>
+
+            <div class="vanilla-slide">
+              <img src="img/img-4.jpg" alt="Alt" />
+            </div>
+          </div>
+
+          <!-- slideshow indicators -->
+          <div id="vanilla-indicators"></div>
+
+          <!-- slideshow arrows -->
+          <div id="vanilla-slideshow-previous">
+            <span><-</span>
+          </div>
+          <div id="vanilla-slideshow-next">
+            <span>-></span>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="js/vanillaSlideshow.min.js"></script>
+  <script src="js/script.js"></script>
+</html>
