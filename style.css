@@ -26,7 +26,8 @@ header #vanilla-slideshow-container {
 }
 
 header #vanilla-slideshow-container img {
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header .overlay {
