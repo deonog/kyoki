@@ -31,6 +31,7 @@ header #vanilla-slideshow-container img {
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #151b1d;
