@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- NAVBAR -->
+    <div class="nav">
+      <input type="checkbox" id="toggle" style="display: none" />
+      <label class="toggle-btn toggle-btn__cross" for="toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <nav class="d-flex flex-column align-items-center justify-content-center">
+        <img src="img/kyoki-logo-black.svg" alt="" class="mb-5" />
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+            <ul class="sub-menu">
+              <li><a href="single-post.html">Post 1</a></li>
+              <li><a href="single-post.html">Post 2</a></li>
+              <li><a href="single-post.html">Post 3</a></li>
+              <li><a href="single-post.html">Post 4</a></li>
+            </ul>
+          </li>
+          <li><a href="portrait.html">Portraits</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        <div class="copyright d-flex text-center">
+          <p>
+            © <span id="current-year">2020</span>. All images and films on this
+            site belong to Kyoki Studios. All work is protected by copyright.
+          </p>
+        </div>
+      </nav>
+    </div>
+    <!-- NAVBAR END -->
     <div class="wrapper page"></div>
   </body>
   <script src="js/jquery.js"></script>

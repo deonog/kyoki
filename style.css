@@ -40,6 +40,22 @@ p {
   font-size: 1em;
 }
 
+a {
+  font-family: "Garamond Regular", sans-serif;
+  text-decoration: none;
+}
+
+/*----------------------------------------*/
+/*  GLOBAL CLASSES
+/*----------------------------------------*/
+.padding {
+  padding: 4rem 0;
+}
+
+.padding-top {
+  padding: 4rem 0 0 0;
+}
+
 /*----------------------------------------*/
 /*  HEADER
 /*----------------------------------------*/
@@ -59,6 +75,16 @@ header .container img {
   height: 15em;
 }
 
+.home .header .container {
+  position: absolute;
+  z-index: 4;
+  max-width: 100%;
+}
+
+.home .header .container img {
+  height: 15em;
+}
+
 .about header::after {
   content: "";
   position: absolute;
@@ -67,7 +93,7 @@ header .container img {
   height: 100vh;
   top: 0;
   left: 0;
-  background: #333;
+  background: #333333;
   opacity: 0.7;
 }
 
@@ -119,7 +145,7 @@ header .container img {
   height: 100%;
   top: 0;
   left: 0;
-  background: #333;
+  background: #333333;
   opacity: 0.7;
 }
 
@@ -179,8 +205,6 @@ header .container img {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
   z-index: 5;
   width: 100%;
 }
@@ -189,20 +213,37 @@ header .container img {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .nav nav ul li:hover > ul {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  z-index: 9;
+  position: relative;
+}
+
+.nav nav ul li a {
   display: block;
-  color: #fff;
-  padding-left: 50%;
+  font-size: 2em;
+  padding: 10px 0;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav nav ul li a:hover {
+  color: #e70505;
 }
 
 .nav nav ul li ul {
-  display: none;
+  position: absolute;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px;
+  left: 50%;
+  z-index: -1;
+  width: 50%;
 }
 
 .nav nav ul li ul li a {
@@ -213,17 +254,9 @@ header .container img {
   color: yellow;
 }
 
-.nav nav ul li a {
-  display: block;
-  font-size: 2em;
-  text-decoration: none;
-  padding: 10px 0;
-  text-align: center;
-  color: #333;
-  font-weight: bold;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.nav nav .copyright {
+  position: absolute;
+  bottom: 2rem;
 }
 
 .toggle-btn {
@@ -283,7 +316,7 @@ header .container img {
 }
 
 #toggle:checked + label.toggle-btn .bar {
-  background-color: red;
+  background-color: #e70505;
 }
 
 #toggle:checked + label.toggle-btn .bar:nth-child(2) {
